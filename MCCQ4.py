@@ -7,15 +7,6 @@ num_text_files = len(list(folder_path.glob('input*.txt')))
 
 if __name__ == "__main__":
 
-    # def check(num, i):
-    #     curr_path = folder_path / f"output{str(i)}.txt"
-    #     with open(curr_path, "r") as file:
-    #         content = file.read()   
-    #     if int(content) == num:
-    #         return True
-    #     else:
-    #         return False
-
     def write(ans, i):
         global question
         with open(rf"C:\Users\User\Downloads\MCC-DATA\{question}\output{i}.txt", "w") as file:
@@ -37,14 +28,9 @@ if __name__ == "__main__":
             
             else:
                 Y += list2[i][1]
-        
 
         return X - Y
                 
-                
-
-
-
 
     # for i in range(1, num_text_files + 1):
     for i in range(1,2):
@@ -61,4 +47,3 @@ if __name__ == "__main__":
         a = SimpleGame(T, list2)
         print(a)
         write(a, i)
-        # print(check(a, i))
